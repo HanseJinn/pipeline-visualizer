@@ -1,0 +1,20 @@
+pipeline:
+  - id: extract_csv
+    type: extract
+    config:
+      path: "data/customers.csv"
+
+  - id: filter_active
+    type: transform
+    config:
+      condition: "status == 'active'"
+
+  - id: map_country
+    type: transform
+    config:
+      mapping: {"US": "United States", "DE": "Germany"}
+
+  - id: load_to_db
+    type: load
+    config:
+      destination: "mock_db"

@@ -13,7 +13,7 @@ A lightweight Streamlit app that reads a YAML pipeline config, visualizes it as 
 
 ```bash
 
-git clone https://github.com/yourname/pipeline-visualizer.git
+git clone https://github.com/HanseJinn/pipeline-visualizer.git
 cd pipeline-visualizer
 pip install -r requirements.txt
 streamlit run app.py
